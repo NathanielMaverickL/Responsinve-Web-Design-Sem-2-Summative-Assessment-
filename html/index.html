@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swedish Recipes Web App</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- Header with logo -->
+    <header>
+        <h1 class="app-title">
+            <img src="../img/logo.png" alt="Logo">
+            Swedish Recipes
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/index.html">Recipes</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filters -->
+    <main>
+        <section class="filters">
+            <button onclick="window.location.href='../html/breakfast.html'">Breakfast</button>
+            <button onclick="window.location.href='../html/maindish.html'">Main</button>
+            <button onclick="window.location.href='../html/dessert.html'">Dessert</button>
+        </section>
+
+        <!-- Recipe cards -->
+        <section class="recipes">
+            <article class="recipe-card" data-category="Breakfast">
+                <img src="../img/kanelbullar.jpg" alt="Kanelbullar">
+                <h3>Kanelbullar</h3>
+                <p>Classic Swedish cinnamon buns.</p>
+                <button class="view-btn"
+                        data-title="Kanelbullar"
+                        data-details="Ingredients: Flour, Sugar, Cinnamon. Instructions: Bake at 180°C for 15 minutes.">
+                    View Recipe
+                </button>
+            </article>
+
+            <article class="recipe-card" data-category="Main">
+                <img src="../img/meatballs.webp" alt="Köttbullar">
+                <h3>Swedish Meatballs</h3>
+                <p>Traditional meatballs with creamy sauce.</p>
+                <button class="view-btn"
+                        data-title="Köttbullar"
+                        data-details="Ingredients: Beef, Pork, Onion, Cream. Instructions: Cook meatballs, prepare sauce, serve warm.">
+                    View Recipe
+                </button>
+            </article>
+
+            <article class="recipe-card" data-category="Dessert">
+                <img src="../img/cake.jpg" alt="Prinsesstårta">
+                <h3>Prinsesstårta</h3>
+                <p>Famous Swedish princess cake.</p>
+                <button class="view-btn"
+                        data-title="Prinsesstårta"
+                        data-details="Ingredients: Sponge cake, Cream, Marzipan. Instructions: Layer cake and cover with marzipan.">
+                    View Recipe
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Swedish Recipes</p>
+    </footer>
+
+</div>
+
+<!-- JS -->
+<script src="../js/script.js"></script>
+</body>
+</html>

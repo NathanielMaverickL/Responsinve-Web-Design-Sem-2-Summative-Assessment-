@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dishes - Swedish Recipes</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/maindish.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- Header with logo -->
+    <header>
+        <div class="header-left">
+            <img src="../img/logo.png" alt="Logo" class="header-logo">
+            <span class="header-text">Main Dishes</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/index.html">Recipes</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Recipe cards -->
+    <section class="recipes">
+
+        <article class="recipe-card">
+            <img src="../img/meatballs.webp" alt="Köttbullar">
+            <h3>Köttbullar</h3>
+            <p>Classic Swedish meatballs with creamy sauce.</p>
+            <button class="view-btn"
+                    data-title="Köttbullar"
+                    data-details="Ingredients: Beef, Pork, Onion, Cream. Instructions: Cook meatballs, prepare sauce, serve warm.">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/pyttipanna.jpg" alt="Pyttipanna">
+            <h3>Pyttipanna</h3>
+            <p>Swedish hash with meat, potatoes, and onions.</p>
+            <button class="view-btn"
+                    data-title="Pyttipanna"
+                    data-details="Ingredients: Potatoes, Meat, Onion. Instructions: Dice ingredients, fry together, serve with fried egg.">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/artsoppa.jpg" alt="Ärtsoppa och Pannkakor">
+            <h3>Ärtsoppa och Pannkakor</h3>
+            <p>Traditional yellow pea soup followed by thin Swedish pancakes.</p>
+            <button class="view-btn"
+                    data-title="Ärtsoppa och Pannkakor"
+                    data-details="Ingredients: Peas, Onion, Flour, Milk, Eggs. Instructions: Cook peas into soup, then make thin pancakes for dessert.">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/kroppkakor.jpg" alt="Kroppkakor">
+            <h3>Kroppkakor</h3>
+            <p>Potato dumplings filled with pork or bacon.</p>
+            <button class="view-btn"
+                    data-title="Kroppkakor"
+                    data-details="Ingredients: Potatoes, Pork, Onion, Flour. Instructions: Prepare dough, fill with pork, boil, serve with butter.">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/korv.jpg" alt="Korv Stroganoff">
+            <h3>Korv Stroganoff</h3>
+            <p>Sausage Stroganoff with creamy tomato sauce.</p>
+            <button class="view-btn"
+                    data-title="Korv Stroganoff"
+                    data-details="Ingredients: Sausage, Onion, Tomato Sauce, Cream. Instructions: Cook sausage, add sauce, simmer and serve.">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/kalops.jpg" alt="Kalops">
+            <h3>Kalops</h3>
+            <p>Traditional Swedish beef stew with spices.</p>
+            <button class="view-btn"
+                    data-title="Kalops"
+                    data-details="Ingredients: Beef, Onion, Carrots, Spices. Instructions: Simmer beef with veggies and spices for 2–3 hours.">
+                View Recipe
+            </button>
+        </article>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="../js/maindish.js"></script>
+</body>
+</html>

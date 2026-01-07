@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast - Swedish Recipes</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/breakfast.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- Header with logo -->
+    <header>
+        <div class="header-left">
+            <img src="../img/logo.png" alt="Logo" class="header-logo">
+            <span class="header-text">Breakfast</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/index.html">Recipes</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Recipe cards -->
+    <section class="recipes">
+
+        <article class="recipe-card">
+            <img src="../img/smorgas.jpg" alt="Smörgås">
+            <h3>Smörgås</h3>
+            <p>Classic Swedish open-faced sandwich.</p>
+            <button class="view-btn"
+                    data-title="Smörgås">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/knackebrod.jpg" alt="Knäckebröd with Kalles Kaviar">
+            <h3>Knäckebröd with Kalles Kaviar</h3>
+            <p>Crispy bread topped with Swedish caviar spread.</p>
+            <button class="view-btn"
+                    data-title="Knäckebröd with Kalles Kaviar">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/filmjolk.jpeg" alt="Filmjölk with Muesli">
+            <h3>Filmjölk with Muesli</h3>
+            <p>Fermented milk served with crunchy muesli.</p>
+            <button class="view-btn"
+                    data-title="Filmjölk with Muesli">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/havregrynsgrot.jpg" alt="Havregrynsgröt">
+            <h3>Havregrynsgröt</h3>
+            <p>Warm oatmeal porridge, a classic Swedish breakfast.</p>
+            <button class="view-btn"
+                    data-title="Havregrynsgröt">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/pannkakor.jpg" alt="Pannkakor">
+            <h3>Pannkakor</h3>
+            <p>Thin Swedish pancakes, perfect with jam or cream.</p>
+            <button class="view-btn"
+                    data-title="Pannkakor">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/kanelbullar.jpg" alt="Kanelbullar">
+            <h3>Kanelbullar</h3>
+            <p>Classic cinnamon buns, soft and aromatic.</p>
+            <button class="view-btn"
+                    data-title="Kanelbullar">
+                View Recipe
+            </button>
+        </article>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="../js/breakfast.js"></script>
+</body>
+</html>

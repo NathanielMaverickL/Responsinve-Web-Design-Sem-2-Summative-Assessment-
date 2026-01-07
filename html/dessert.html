@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - Swedish Recipes</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/dessert.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- Header with logo -->
+    <header>
+        <div class="header-left">
+            <img src="../img/logo.png" alt="Logo" class="header-logo">
+            <span class="header-text">Desserts</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/index.html">Recipes</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Recipe cards -->
+    <section class="recipes">
+
+        <article class="recipe-card">
+            <img src="../img/cake.jpg" alt="Prinsesstårta">
+            <h3>Prinsesstårta</h3>
+            <p>Famous Swedish princess cake with sponge, custard, cream, and marzipan.</p>
+            <button class="view-btn"
+                    data-title="Prinsesstårta">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/kladdkaka.jpg" alt="Kladdkaka">
+            <h3>Kladdkaka</h3>
+            <p>Sticky chocolate cake, rich and gooey.</p>
+            <button class="view-btn"
+                    data-title="Kladdkaka">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/semla.jpg" alt="Semla">
+            <h3>Semla</h3>
+            <p>Traditional cardamom bun with almond paste and whipped cream.</p>
+            <button class="view-btn"
+                    data-title="Semla">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/ostkaka.jpg" alt="Ostkaka">
+            <h3>Ostkaka</h3>
+            <p>Swedish cheesecake made with curd, served with jam.</p>
+            <button class="view-btn"
+                    data-title="Ostkaka">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/chokladbiskvi.jpg" alt="Chokladbiskvi">
+            <h3>Chokladbiskvi</h3>
+            <p>Chocolate-coated almond meringue cookies filled with buttercream.</p>
+            <button class="view-btn"
+                    data-title="Chokladbiskvi">
+                View Recipe
+            </button>
+        </article>
+
+        <article class="recipe-card">
+            <img src="../img/punschroll.png" alt="Punsch-roll">
+            <h3>Punsch-roll</h3>
+            <p>Chocolate and marzipan roll flavored with Swedish punsch liqueur.</p>
+            <button class="view-btn"
+                    data-title="Punsch-roll">
+                View Recipe
+            </button>
+        </article>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="../js/dessert.js"></script>
+</body>
+</html>
